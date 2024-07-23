@@ -8,7 +8,7 @@ export default function Header(){
       {/* desktop nav */}
       <div className="hidden xl:flex xl:flex-row xl:items-center xl:gap-x-4">
         <h3>About</h3>
-        <h3>Skills</h3>
+        <h3>Services</h3>
         <h3>Experience</h3>
         <h3>Projects</h3>
         <h3>Contact</h3>
