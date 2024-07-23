@@ -1,6 +1,7 @@
 "use client";
 
 import { CiMenuFries } from "react-icons/ci";
+import Navbar from "./navbar";
 
 export default function Header(){
   return(
@@ -23,9 +24,7 @@ export default function Header(){
         </div>
       </div>
       {/* mobile nav */}
-      <div className="xl:hidden">
-        <CiMenuFries className="text-[32px]" />
-      </div>
+      <Navbar />
     </div>
   );
 }

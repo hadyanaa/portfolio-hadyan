@@ -17,6 +17,7 @@ const config: Config = {
       colors:{
         primary: '#0F172A',
         secondary: '#E2E8F0',
+        nav: '#1E293B',
         gray: '#94A3B8',
         blue: '#38BDF8',
       }
