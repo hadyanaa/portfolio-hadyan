@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Nobiko Coin",
+    "category": "Freelance",
+    "description": "Slicing a figma design into frontend web, this is a freelance project",
+    "stack": ["next-js", "tailwind css"],
+    "url_image": "/portfolio/rudi-nobiko-coin.png",
+    "url_project": "https://nobiko-coin-rudi.netlify.app/"
+  },
+  {
+    "title": "Corona Beerus",
+    "category": "Freelance",
+    "description": "Slicing a figma design into frontend web, this is a freelance project",
+    "stack": ["next-js", "tailwind css"],
+    "url_image": "/portfolio/rudi-corona-beerus.png",
+    "url_project": "https://corona-beerus-rudi.netlify.app/"
+  },
+  {
+    "title": "Product Digital API",
+    "category": "Frontend",
+    "description": "Created a web utilizing NextJs and Tailwind",
+    "stack": ["next-js", "tailwind css", "laravel"],
+    "url_image": "/portfolio/ioh-api.png",
+    "url_project": "https://digitalpartnership.ioh.co.id/"
+
+  },
+  {
+    "title": "Glowthinc E-Commerce App",
+    "category": "Fullstack",
+    "description": "Final Fullstack Project working as a group on sanber superbootcamp",
+    "stack": ["react-js", "tailwind css", "node-js"],
+    "url_image": "/portfolio/project-bulan4.png",
+    "url_project": "https://glowthinc.netlify.app/"
+  },
+  {
+    "title": "Sportyan E-Commerce App",
+    "category": "Fullstack",
+    "description": "Fullstack project on my journey with sanber superbootcamp",
+    "stack": ["react-js", "tailwind css", "node-js"],
+    "url_image": "/portfolio/project-bulan2.png",
+    "url_project": "https://sportyan.netlify.app/"
+  },
+  {
+    "title": "Movie & Game App",
+    "category": "Frontend",
+    "description": "First real project on sanber superbootcamp",
+    "stack": ["react-js", "tailwind css"],
+    "url_image": "/portfolio/project-bulan1.png",
+    "url_project": "https://frontendproject-hadyan-and-dany.netlify.app/"
+  },
+  {
+    "title": "CRUD React App",
+    "category": "Frontend",
+    "description": "Compilation of my task on sanber superbootcamp",
+    "stack": ["react-js", "tailwind css"],
+    "url_image": "/portfolio/crud-reactjs.png",
+    "url_project": "https://hadyan-reactjs.netlify.app/"
+  },
+  {
+    "title": "Portfolio Website (Old)",
+    "category": "Frontend",
+    "description": "My first portfolio website",
+    "stack": ["HTML", "Bootstrap"],
+    "url_image": "/portfolio/wp.png",
+    "url_project": "https://hadyanaa.github.io/"
+  },
+  {
+    "title": "UX Designer",
+    "category": "Freelance",
+    "description": "",
+    "stack": ["figma"],
+    "url_image": "/portfolio/ux.png",
+    "url_project": "https://www.figma.com/design/we5dxlnrVcX5RWGmq15Vgf/Proposal-UX-Design?node-id=0-1&t=X6U634Ix9oFFe1id-0"
+  },
+  {
+    "title": "UI/UX Prototyping",
+    "category": "College",
+    "description": "",
+    "stack": ["figma"],
+    "url_image": "/portfolio/ps.png"   ,
+    "url_project": "https://www.figma.com/proto/FrJjg3Kz4fX7rowxJeHklA/Hadyan-Abdul-Aziz---Prototype-Edinsha-(Asuransi-Syariah)?page-id=0%3A1&node-id=120-0&viewport=241%2C48%2C0.09&scaling=scale-down&starting-point-node-id=120%3A0"
+  },
+  {
+    "title": "Project Management",
+    "category": "College",
+    "description": "",
+    "stack": [],
+    "url_image": "/portfolio/pm.png"   ,
+    "url_project": "https://hadyanaa.github.io/"
+  },
+  {
+    "title": "IT Human Resource Management",
+    "category": "College",
+    "description": "",
+    "stack": [],
+    "url_image": "/portfolio/msdm.png",
+    "url_project": "https://drive.google.com/file/d/12FlBRxF-05wYWTHhjG-zsZsDDcbZt8lE/view"
+  }
+]
