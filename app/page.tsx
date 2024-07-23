@@ -1,5 +1,6 @@
 import About from "@/components/homes/about";
 import Experience from "@/components/homes/experiences";
+import Projects from "@/components/homes/projects";
 import Services from "@/components/homes/services";
 import Image from "next/image";
 
@@ -30,6 +31,9 @@ export default function Home() {
 
       {/* experiences */}
       <Experience />
+
+      {/* projects */}
+      <Projects />
     </main>
   );
 }
