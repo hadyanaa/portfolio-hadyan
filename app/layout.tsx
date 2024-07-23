@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./header";
-
+import { LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
 export const metadata: Metadata = {
   title: "Portofolio Hadyan",
   description: "A Frontend Developer Who Never Stops Learning",
 };
+
+LuGithub
 
 export default function RootLayout({
   children,
@@ -22,14 +24,16 @@ export default function RootLayout({
       <body className="text-secondary">
         <Header/>
         <div className="grid grid-cols-12 bg-primary">
-          <div className="flex justify-center border">
-            <p className="fixed bottom-24">logo github</p>
+          <div className="flex justify-center">
+            <LuLinkedin className="fixed bottom-48 text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
+            <LuInstagram className="fixed bottom-36 text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
+            <LuGithub className="fixed bottom-24 text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
             <div className="fixed bottom-0 py-10 border border-solid border-gray"></div>
           </div>
           <div className="col-span-10">
             {children}
           </div>
-          <div className="flex justify-center border">
+          <div className="flex justify-center">
             <p className="fixed bottom-48 transform rotate-90 text-gray">hadyanabdulaziz@gmail.com</p>
             <div className="fixed bottom-0 py-10 border border-solid border-gray"></div>
           </div>
