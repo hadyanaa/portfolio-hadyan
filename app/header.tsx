@@ -3,7 +3,7 @@
 import { CiMenuFries } from "react-icons/ci";
 export default function Header(){
   return(
-    <div className="flex justify-between items-center bg-primary px-12 xl:px-24 py-4 h-12">
+    <div className="fixed top-0 right-0 z-50 duration-500 inset-x-0 flex justify-between items-center bg-primary px-12 xl:px-24 py-4 h-12 backdrop-blur-lg bg-opacity-60">
       <h1>Hadyan Abdul Aziz</h1>
       {/* desktop nav */}
       <div className="hidden xl:flex xl:flex-row xl:items-center xl:gap-x-4">
