@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "../atoms/button";
 import Image from "next/image";
 import Card from "../atoms/card";
@@ -17,6 +17,9 @@ export default function Projects(){
   const [portfolio, setPortfolio] = useState<PortfolioItem[]>([]);
   const [filteredPortfolio, setFilteredPortfolio] = useState<PortfolioItem[]>([]);
   const [filterCategory, setFilterCategory] = useState<string>('');
+  const [showAll, setShowAll] = useState<boolean>(false);
+  const itemsToShow = showAll ? filteredPortfolio : filteredPortfolio.slice(0, 6);
+  const backToTop = document.getElementById("projects");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,6 +45,8 @@ export default function Projects(){
       setFilteredPortfolio(filtered);
     }
   };
+
+  console.log(itemsToShow.length);
   return (
     <div id="projects" className="flex flex-col items-center justify-center gap-4 mt-12 pt-20 xl:mt-40 mb-24">
       <h1 className="text-xl xl:text-2xl font-normal mb-8">My Projects</h1>
@@ -66,8 +71,8 @@ export default function Projects(){
       </div>
 
       {/* list portfolio */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-32">
-        {filteredPortfolio.map((item, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-16">
+        {itemsToShow.map((item, index) => (
           <>
             <Card
               title={item.title}
@@ -80,6 +85,15 @@ export default function Projects(){
           </>
         ))}
       </div>
+      {
+        itemsToShow.length > 5 ?
+        <Button
+          onClick={() => {
+            setShowAll(!showAll)
+            if (showAll) backToTop?.scrollIntoView(true)
+          }}>{showAll ? 'Show Less' : 'Show More'}</Button>
+          : ''
+      }
     </div>
   )
 }
