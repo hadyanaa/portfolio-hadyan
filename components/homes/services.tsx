@@ -89,7 +89,7 @@ export default function Services(){
         </div>
       </div>
       <div className="flex flex-col justify-start items-center mb-24 gap-8">
-        <h1 className="text-xl xl:text-2xl font-normal">My Stack</h1>
+        <h1 className="text-xl xl:text-2xl font-normal">My Stacks</h1>
         <div className="flex gap-4 flex-wrap">
           {myStacks.map((stack, index) => {
             return (
