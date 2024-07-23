@@ -68,7 +68,7 @@ export default function Services(){
   ]
   return(
     <>
-      <div className="flex flex-col justify-start items-center mb-24 gap-8">
+      <div id="services" className="flex flex-col justify-start items-center pt-20 mb-24 gap-8">
         <h1 className="text-xl xl:text-2xl font-normal">What I Do</h1>
         <div className="grid grid-cols-1 xl:grid-cols-3 w-full gap-8">
           {myServices.map((serve, index) => {

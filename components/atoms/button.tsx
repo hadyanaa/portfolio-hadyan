@@ -9,7 +9,7 @@ const Button: FC<ButtonProps> = ({ onClick, children, className }) => {
   return (
     <div className='border-gray text-gray'>
       <button
-        className={`border hover:bg-blue/20 py-2 px-4 rounded-xl ${className} transition duration-200`}
+        className={`border hover:bg-blue/20 py-2 px-4 rounded-xl ${className} transition duration-300`}
         onClick={onClick}
       >
         {children}

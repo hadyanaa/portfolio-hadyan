@@ -26,7 +26,7 @@ export default function Projects(){
     }
   };
   return (
-    <div className="flex flex-col items-center justify-center gap-4 mt-12 xl:mt-40 mb-24">
+    <div id="projects" className="flex flex-col items-center justify-center gap-4 mt-12 pt-20 xl:mt-40 mb-24">
       <h1 className="text-xl xl:text-2xl font-normal mb-8">My Projects</h1>
       {/* filter */}
       <div className="flex flex-row justify-center gap-4">
