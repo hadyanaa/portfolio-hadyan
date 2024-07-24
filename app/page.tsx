@@ -1,4 +1,5 @@
 import About from "@/components/homes/about";
+import Contacts from "@/components/homes/contacts";
 import Experience from "@/components/homes/experiences";
 import Projects from "@/components/homes/projects";
 import Services from "@/components/homes/services";
@@ -34,6 +35,9 @@ export default function Home() {
 
       {/* projects */}
       <Projects />
+
+      {/* contacts */}
+      <Contacts />
     </main>
   );
 }

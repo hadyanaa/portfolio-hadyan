@@ -17,7 +17,7 @@ export default function Header(){
           className="hover:border-b-2 hover:border-blue hover:text-blue transition duration-200 hover:cursor-pointer">Experiences</a>
         <a href="#projects"
           className="hover:border-b-2 hover:border-blue hover:text-blue transition duration-200 hover:cursor-pointer">Projects</a>
-        <a href="#"
+        <a href="#contacts"
           className="hover:border-b-2 hover:border-blue hover:text-blue transition duration-200 hover:cursor-pointer">Contact</a>
         <div className="flex justify-center items-center border border-blue rounded px-2 py-1 hover:bg-blue/20 hover:cursor-pointer">
           <p className="text-blue">Resume</p>
