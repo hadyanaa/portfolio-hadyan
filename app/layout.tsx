@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./header";
 import { LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
+import Footer from "./footer";
 export const metadata: Metadata = {
   title: "Portofolio Hadyan",
   description: "A Frontend Developer Who Never Stops Learning",
@@ -38,6 +39,7 @@ export default function RootLayout({
             <div className="fixed bottom-0 py-10 border border-solid border-gray"></div>
           </div>
         </div>
+        <Footer />
       </body>
     </html>
   );
