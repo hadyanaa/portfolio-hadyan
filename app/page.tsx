@@ -4,7 +4,6 @@ import Experience from "@/components/homes/experiences";
 import Projects from "@/components/homes/projects";
 import Services from "@/components/homes/services";
 import Image from "next/image";
-import Footer from "./footer";
 
 export default function Home() {
   return (
