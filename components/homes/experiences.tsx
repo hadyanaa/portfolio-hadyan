@@ -106,7 +106,7 @@ export default function Experience(){
                 {role.jobdesc.map((desc, id) => {
                   return(
                     <li className="flex flex-row gap-2 justify-between items-start">
-                      <AiFillCaretRight className="text-base w-[10%] mt-1" />
+                      <AiFillCaretRight className="text-base w-[10%] mt-1 text-blue" />
                       <p className="text-left w-full text-gray text-base">{desc}</p>
                     </li>
                   )

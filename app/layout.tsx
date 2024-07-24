@@ -1,14 +1,9 @@
-import type { Metadata } from "next";
+"use client";
 import "./globals.css";
 import Header from "./header";
 import { LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
 import Footer from "./footer";
-export const metadata: Metadata = {
-  title: "Portofolio Hadyan",
-  description: "A Frontend Developer Who Never Stops Learning",
-};
-
-LuGithub
+import 'react-tooltip/dist/react-tooltip.css'
 
 export default function RootLayout({
   children,
@@ -18,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Portfolio | Hadyan Abdul Aziz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />

@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import { AiFillCaretRight } from "react-icons/ai";
+import { Tooltip } from 'react-tooltip'
 
 export default function Services(){
   const myServices = [
@@ -79,7 +81,10 @@ export default function Services(){
                 <ol className="text-center">
                   {serve.service.map((s, i) => {
                     return (
-                      <li className="flex flex-row items-start justify-start gap-2" key={i}><AiFillCaretRight />{s}</li>
+                      <li className="flex flex-row items-start justify-between gap-2" key={i}>
+                        <AiFillCaretRight className="text-base w-[10%] mt-1 text-blue" />
+                        <p className="text-left w-full text-gray text-base">{s}</p>
+                      </li>
                     )
                   })}
                 </ol>
@@ -93,7 +98,10 @@ export default function Services(){
         <div className="flex gap-4 flex-wrap">
           {myStacks.map((stack, index) => {
             return (
-              <Image key={`stack-${index}`} src={stack.path} alt={stack.name} width="0" height="0" sizes="100vw" className="w-[40px] h-auto xl:w-[60px]" />
+              <>
+                <Image data-tooltip-id={`${index}-${stack.name}`} data-tooltip-content={stack.name} src={stack.path} alt={stack.name} width="0" height="0" sizes="100vw" className="w-[40px] h-auto xl:w-[60px]" />
+                <Tooltip id={`${index}-${stack.name}`} />
+              </>
             )
           })}
         </div>
