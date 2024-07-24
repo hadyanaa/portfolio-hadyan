@@ -18,7 +18,7 @@ export default function Home() {
           <p className="text-gray font-sans text-base xl:text-lg">I'm a passionate Front-End web developer with hands-on experience in building web applications using React.js & Next.js with TypeScript, TailwindCSS, and Prisma, with UI/UX designing.</p>
           <span className="text-blue font-sans">Currently available for freelance</span>
           <div className="flex justify-center items-center xl:hidden border border-blue rounded px-4 py-2 hover:bg-blue/20 hover:cursor-pointer">
-            <p className="text-blue">Resume</p>
+            <a href="/Resume-HadyanAbdulAziz-Jul2024.pdf" className="text-blue" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
         <div className="flex justify-center items-center border ">

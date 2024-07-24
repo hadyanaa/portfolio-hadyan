@@ -25,10 +25,16 @@ export default function RootLayout({
       <body className="text-secondary">
         <Header/>
         <div className="grid grid-cols-12 bg-primary">
-          <div className="flex justify-center">
-            <LuLinkedin className="fixed bottom-48 text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
-            <LuInstagram className="fixed bottom-36 text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
-            <LuGithub className="fixed bottom-24 text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
+          <div className="flex justify-center items-center">
+            <a className="fixed bottom-48" href="https://www.linkedin.com/in/hadyanaa/" target="_blank">
+              <LuLinkedin className="text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
+            </a>
+            <a className="fixed bottom-36" href="https://www.instagram.com/hady.an/" target="_blank">
+              <LuInstagram className="text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
+            </a>
+            <a className="fixed bottom-24" href="https://github.com/hadyanaa" target="_blank">
+              <LuGithub className="text-[20px] text-gray hover:text-blue transition hover:cursor-pointer hover:-translate-y-1" />
+            </a>
             <div className="fixed bottom-0 py-10 border border-solid border-gray"></div>
           </div>
           <div className="col-span-10">

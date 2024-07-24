@@ -20,7 +20,7 @@ export default function Header(){
         <a href="#contacts"
           className="hover:border-b-2 hover:border-blue hover:text-blue transition duration-200 hover:cursor-pointer">Contact</a>
         <div className="flex justify-center items-center border border-blue rounded px-2 py-1 hover:bg-blue/20 hover:cursor-pointer">
-          <p className="text-blue">Resume</p>
+          <a href="/Resume-HadyanAbdulAziz-Jul2024.pdf" className="text-blue" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
       {/* mobile nav */}

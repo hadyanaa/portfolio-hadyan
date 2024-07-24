@@ -27,20 +27,20 @@ const Card: FC<CardProps> = ({ title, category, description, stack, url_image, u
           <p>{description}</p>
         </div>
       </div>
-      <div className="flex flex-col p-4 gap-2 bg-nav">
-        <div className="flex flex-row flex-wrap gap-2">
-        {stack.map((s, i) => (
-          <span className="text-xs border p-1 rounded-lg text-gray" key={i}>{s}</span>
-        ))}
-        </div>
-        <div className="flex justify-between text-gray">
-          <h4 className="font-normal">{title}</h4>
-          <a href={url_project} target="_blank">
-            <FaArrowUpRightFromSquare className="hover:text-blue" />
-          </a>
+      <a href={url_project} className="hover:!text-blue text-gray" target="_blank">
+        <div className="flex flex-col p-4 gap-2 bg-nav">
+          <div className="flex flex-row flex-wrap gap-2">
+          {stack.map((s, i) => (
+            <span className="text-xs border p-1 rounded-lg text-gray" key={i}>{s}</span>
+          ))}
+          </div>
+          <div className="flex justify-between">
+            <h4 className="font-normal">{title}</h4>
+              <FaArrowUpRightFromSquare />
 
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   )
 }

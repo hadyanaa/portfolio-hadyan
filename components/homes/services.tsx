@@ -75,7 +75,7 @@ export default function Services(){
             return (
               <div className="flex flex-col justify-center items-center gap-4 py-8 shadow-md shadow-slate-600" key={index}>
                 <h3 className="text-gray font-sans font-normal text-base xl:text-lg">{serve.name}</h3>
-                <p className="text-gray font-sans font-light text-sm xl:text-base">{serve.description}</p>
+                <p className="text-gray font-sans font-light text-sm xl:text-base hidden">{serve.description}</p>
                 <ol className="text-center">
                   {serve.service.map((s, i) => {
                     return (
