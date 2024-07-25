@@ -1,6 +1,7 @@
 import About from "@/components/homes/about";
 import Contacts from "@/components/homes/contacts";
 import Experience from "@/components/homes/experiences";
+import PhotoHeader from "@/components/homes/photo-header";
 import Projects from "@/components/homes/projects";
 import Services from "@/components/homes/services";
 import Image from "next/image";
@@ -21,9 +22,10 @@ export default function Home() {
             <a href="/Resume-HadyanAbdulAziz-Jul2024.pdf" className="text-blue" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
-        <div className="flex justify-center items-center border ">
+        {/* <div className="flex justify-center items-center border ">
           <Image src="/images/hadyan.png" alt="My Photo" width="0" height="0" sizes="100vw" className="w-[150px] h-auto xl:w-[400px]" />
-        </div>
+        </div> */}
+        <PhotoHeader />
       </div>
       {/* about */}
       <About />
