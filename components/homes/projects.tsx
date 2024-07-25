@@ -19,7 +19,10 @@ export default function Projects(){
   const [filterCategory, setFilterCategory] = useState<string>('');
   const [showAll, setShowAll] = useState<boolean>(false);
   const itemsToShow = showAll ? filteredPortfolio : filteredPortfolio.slice(0, 6);
-  const backToTop = document.getElementById("projects");
+  const [backToTopElement, setBackToTopElement] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    setBackToTopElement(document.getElementById("projects"));
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -90,7 +93,7 @@ export default function Projects(){
         <Button
           onClick={() => {
             setShowAll(!showAll)
-            if (showAll) backToTop?.scrollIntoView(true)
+            if (showAll) backToTopElement?.scrollIntoView(true)
           }}>{showAll ? 'Show Less' : 'Show More'}</Button>
           : ''
       }
