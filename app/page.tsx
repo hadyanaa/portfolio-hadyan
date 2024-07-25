@@ -15,7 +15,7 @@ export default function Home() {
           <span className="text-blue font-sans">Hi! my name is</span>
           <h1 className="text-4xl xl:text-5xl font-bold">Hadyan Abdul Aziz.</h1>
           <h1 className="text-gray text-4xl xl:text-5xl font-bold">I create visually pleasing interfaces for the web.</h1>
-          <p className="text-gray font-sans text-base xl:text-lg">I'm a passionate Front-End web developer with hands-on experience in building web applications using React.js & Next.js with TypeScript, TailwindCSS, and Prisma, with UI/UX designing.</p>
+          <p className="text-gray font-sans text-base xl:text-lg">I am a passionate Front-End web developer with hands-on experience in building web applications using React.js & Next.js with TypeScript, TailwindCSS, and Prisma, with UI/UX designing.</p>
           <span className="text-blue font-sans">Currently available for freelance</span>
           <div className="flex justify-center items-center xl:hidden border border-blue rounded px-4 py-2 hover:bg-blue/20 hover:cursor-pointer">
             <a href="/Resume-HadyanAbdulAziz-Jul2024.pdf" className="text-blue" target="_blank" rel="noopener noreferrer">Resume</a>

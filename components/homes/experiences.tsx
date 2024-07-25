@@ -99,13 +99,13 @@ export default function Experience(){
         <div className="w-[70%] flex flex-col gap-8 col-span-3">
           {work.roles.map((role, i) => {
             return(
-            <div className="flex flex-col gap-2">
+            <div key={`exp-${i}`} className="flex flex-col gap-2">
               <h3 className="text-lg">{role.name} <span className="text-blue transition duration-200"><a className="hover:underline hover:underline-offset-8 hover:cursor-pointer" href={work.url_office} target="_blank">@{work.office}</a></span></h3>
               <p className="text-gray font-sans text-sm">{role.time}</p>
               <ul className="flex flex-col gap-2">
                 {role.jobdesc.map((desc, id) => {
                   return(
-                    <li className="flex flex-row gap-2 justify-between items-start">
+                    <li key={`job-desc-${id}`} className="flex flex-row gap-2 justify-between items-start">
                       <AiFillCaretRight className="text-base w-[10%] mt-1 text-blue" />
                       <p className="text-left w-full text-gray text-base">{desc}</p>
                     </li>

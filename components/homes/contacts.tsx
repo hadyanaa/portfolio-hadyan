@@ -6,7 +6,7 @@ export default function Contacts(){
       <span className="text-blue font-sans">What's next</span>
       <h1 className="text-4xl xl:text-5xl font-bold">Get In Touch</h1>
       <p className="text-gray font-sans text-sm xl:text-base text-center max-w-[70%] leading-relaxed">
-      I’m currently looking for a remote job or any new opportunities. Whether you have a project to discuss or just want to say hi, my inbox is open for all!
+      I am currently looking for a remote job or any new opportunities. Whether you have a project to discuss or just want to say hi, my inbox is open for all!
       </p>
       <a href="mailto:hadyansecond@gmail.com" target="_blank">
         <Button className="mt-12">
