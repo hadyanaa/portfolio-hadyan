@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main className="flex bg-primary min-h-screen flex-col justify-between px-8 xl:px-20 gap-y-16">
       {/* landing hero */}
+      <div id="hero"></div>
       <div className="flex flex-col xl:flex-row justify-center items-center gap-8 mt-12 xl:mt-40 mb-24">
         <div className="flex flex-col justify-center items-center xl:items-start text-center xl:text-left gap-4 order-2 xl:order-none">
           <span className="text-blue font-sans">Hi! my name is</span>
