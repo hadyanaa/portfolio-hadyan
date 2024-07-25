@@ -80,7 +80,7 @@ export default function Experience(){
     setWork(works)
   }
   return(
-    <div id="experiences" className="flex flex-col gap-4 mt-12 pt-20 xl:mt-40 mb-24 mx-auto w-2/3">
+    <div id="experiences" className="flex flex-col gap-4 mt-12 pt-20 xl:mt-40 mb-24 mx-auto">
       <h1 className="text-xl xl:text-2xl font-normal mb-8">My Experiences</h1>
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 w-full">
         <div className="w-[30%]">

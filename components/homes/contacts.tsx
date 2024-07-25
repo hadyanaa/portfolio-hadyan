@@ -8,7 +8,7 @@ export default function Contacts(){
       <p className="text-gray font-sans text-sm xl:text-base text-center max-w-[70%] leading-relaxed">
       I am currently looking for a remote job or any new opportunities. Whether you have a project to discuss or just want to say hi, my inbox is open for all!
       </p>
-      <a href="mailto:hadyansecond@gmail.com" target="_blank">
+      <a href="mailto:hadyanabdulaziz@gmail.com" target="_blank">
         <Button className="mt-12">
           Say Hello!
         </Button>

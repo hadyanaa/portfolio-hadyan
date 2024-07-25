@@ -55,7 +55,7 @@ export default function Projects(){
       <h1 className="text-xl xl:text-2xl font-normal mb-8">My Projects</h1>
       
       {/* filter */}
-      <div className="flex flex-row justify-center gap-4">
+      <div className="flex flex-wrap flex-row justify-center gap-4 mb-8">
         <Button
           className={`${filterCategory === '' ? 'border-blue text-blue' : ''}`}
           onClick={() => handleFilter('')}>All</Button>
@@ -74,7 +74,7 @@ export default function Projects(){
       </div>
 
       {/* list portfolio */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 mb-16">
         {itemsToShow.map((item, index) => (
           <>
             <Card
