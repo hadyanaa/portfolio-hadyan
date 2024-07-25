@@ -14,6 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Portfolio | Hadyan Abdul Aziz</title>
+        <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
