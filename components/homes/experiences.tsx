@@ -82,14 +82,14 @@ export default function Experience(){
   return(
     <div id="experiences" className="flex flex-col gap-4 mt-12 pt-20 xl:mt-40 mb-24 mx-auto">
       <h1 className="text-xl xl:text-2xl font-normal mb-8">My Experiences</h1>
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10 w-full">
+      <div className="flex flex-col sm:flex-row gap-6 md:gap-10 w-full">
         <div className="w-[30%]">
-          <ul className="flex flex-row md:flex-col">
+          <ul className="flex flex-row sm:flex-col">
             {myExperiences.map((exp, index) => {
               return (
                 <li
                   onClick={() => handleWork(exp)} 
-                  className={`flex border-b-2  md:border-l-2 md:border-b-0 p-4 font-sans hover:text-blue hover:border-blue ${exp.id === work.id ? 'text-blue border-blue': 'text-gray border-gray/20'} transform hover:cursor-pointer transition duration-300`}
+                  className={`flex border-b-2  sm:border-l-2 sm:border-b-0 p-4 font-sans hover:text-blue hover:border-blue ${exp.id === work.id ? 'text-blue border-blue': 'text-gray border-gray/20'} transform hover:cursor-pointer transition duration-300`}
                   key={index}>{exp.office}
                 </li>
               )
@@ -100,14 +100,14 @@ export default function Experience(){
           {work.roles.map((role, i) => {
             return(
             <div key={`exp-${i}`} className="flex flex-col gap-2">
-              <h3 className="text-lg">{role.name} <span className="text-blue transition duration-200"><a className="hover:underline hover:underline-offset-8 hover:cursor-pointer" href={work.url_office} target="_blank">@{work.office}</a></span></h3>
-              <p className="text-gray font-sans text-sm">{role.time}</p>
+              <h3 className="text-base md:text-lg">{role.name} <span className="text-blue transition duration-200"><a className="hover:underline hover:underline-offset-8 hover:cursor-pointer" href={work.url_office} target="_blank">@{work.office}</a></span></h3>
+              <p className="text-gray font-sans text-xs md:text-sm mb-4">{role.time}</p>
               <ul className="flex flex-col gap-2">
                 {role.jobdesc.map((desc, id) => {
                   return(
                     <li key={`job-desc-${id}`} className="flex flex-row gap-2 justify-between items-start">
-                      <AiFillCaretRight className="text-base w-[10%] mt-1 text-blue" />
-                      <p className="text-left w-full text-gray text-base">{desc}</p>
+                      <AiFillCaretRight className="text-sm md:text-base w-[10%] mt-1 text-blue" />
+                      <p className="text-justify w-full text-gray text-xs md:text-base">{desc}</p>
                     </li>
                   )
                 })}
