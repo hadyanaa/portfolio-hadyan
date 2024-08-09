@@ -7,7 +7,7 @@ export default function About(){
         Have more than a year of professional experience in technology industry.
         Currently working as a junior developer that was placed at PT Indosat Tbk. 
         Committed to advancing knowledge in project development and other technologies to have advantages in the future. 
-        Passionate learning and growing to build career professional.
+        Passionate learning and growing to build a professional career.
       </p>
     </div>
   )
